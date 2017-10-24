@@ -31,6 +31,27 @@ namespace DuplicationKata.Regression
             song.SingCheers();
             Approvals.Verify(song.song + "\n");
         }
+
+        [TestMethod]
+        public void test21()
+        {
+            Lesson21 song = new Lesson21();
+            var names = new[] {"Llewellyn", "Samatha", "Tomas", "Emilia"};
+            song.SingSong(1, names);
+            song.SingSong(2, names);
+            song.SingSong(3, names);
+            Approvals.Verify(song.song + "\n");
+        }
+
+        [TestMethod]
+        public void test31()
+        {
+            var song = new Lesson31();
+            var names = new[] {"Llewellyn", "Samatha", "Tomas", "Emilia"};
+            song.SingSong(1, names);
+            song.SingSong(2, names);
+            song.SingSong(3, names);
+            Approvals.Verify(song.song + "\n");
+        }
     }
 }
-

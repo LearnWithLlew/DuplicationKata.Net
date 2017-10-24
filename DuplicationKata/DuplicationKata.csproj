@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Lesson1Straight.cs" />
+    <Compile Include="Lesson31.cs" />
+    <Compile Include="Lesson21.cs" />
     <Compile Include="Lesson2Variable.cs" />
     <Compile Include="Lesson3HigherOrderFunctions.cs" />
     <Compile Include="Regression\RegressionTest.cs" />
