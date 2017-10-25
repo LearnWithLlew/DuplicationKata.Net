@@ -7,11 +7,11 @@ namespace DuplicationKata
             Sing("100 bottles of beer on the wall");
             Sing("100 bottles of beer");
             Sing("Take one down, pass it around");
-            Sing("100 bottles of beer on the wall");
+            Sing("99 bottles of beer on the wall");
             Sing("99 bottles of beer on the wall");
             Sing("99 bottles of beer");
             Sing("Take one down, pass it around");
-            Sing("99 bottles of beer on the wall");
+            Sing("98 bottles of beer on the wall");
         }
     }
 }
