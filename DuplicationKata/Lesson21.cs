@@ -24,7 +24,7 @@ namespace DuplicationKata
                     {
                         if (name.StartsWith("Sam"))
                         {
-                            Sing("Say yeah! Say yo! Say " + name + " doesn't break any tests!");
+                            Sing("Say yeah! Say yo! Say " + name);
                         }
                         else
                         {
