@@ -22,7 +22,7 @@ namespace DuplicationKata
                 case 2:
                     foreach (var name in names)
                     {
-                        if (name.StartsWith("am"))
+                        if (name.StartsWith("Sam"))
                         {
                             Sing("Say yeah! Say yo! Say " + name);
                         }
