@@ -1,4 +1,7 @@
 # DuplicationKata.Net
+
+[![Build](https://github.com/LearnWithLlew/DuplicationKata.Net/actions/workflows/build.yml/badge.svg)](https://github.com/LearnWithLlew/DuplicationKata.Net/actions/workflows/build.yml)
+
 Kata to learn to remove Duplication in .Net
 
 ## Resources
