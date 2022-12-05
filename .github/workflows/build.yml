@@ -1,0 +1,35 @@
+
+name: Build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: build and test
+      run: dotnet test
+      
+  auto-merge:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+      - name: auto-merge
+        if: |
+          github.actor == 'dependabot[bot]' &&
+          github.event_name == 'pull_request'
+        run: |
+          ./merge_dependabot.sh
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          # this secret needs to be in the settings.secrets.dependabot
+          GITHUB_TOKEN: ${{secrets.GH_ACTION_TOKEN}}
